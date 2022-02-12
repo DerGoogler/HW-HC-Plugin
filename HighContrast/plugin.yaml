@@ -1,0 +1,8 @@
+run: index.js
+package:
+  author: Der_Googler
+  version: 1.0
+  language: JavaScript & CSS
+  description: |-
+    This plugin makes some new highcontrast styles, card etc ...
+    It includes an option to display the download button
