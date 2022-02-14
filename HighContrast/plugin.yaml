@@ -6,3 +6,5 @@ package:
   description: |-
     This plugin makes some new highcontrast styles, card etc ...
     It includes an option to display the download button
+options:
+  allowEditor: true
