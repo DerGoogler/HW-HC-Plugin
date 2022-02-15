@@ -8,3 +8,4 @@ package:
     It includes an option to display the download button
 options:
   allowEditor: true
+
