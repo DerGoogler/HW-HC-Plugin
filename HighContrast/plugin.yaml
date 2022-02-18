@@ -1,4 +1,5 @@
 run: index.js
+mode: "null"
 package:
   author: Der_Googler
   version: 1.0
@@ -8,4 +9,3 @@ package:
     It includes an option to display the download button
 options:
   allowEditor: true
-
