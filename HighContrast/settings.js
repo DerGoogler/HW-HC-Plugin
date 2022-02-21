@@ -1,5 +1,5 @@
-(function () {
-  const hc = new HWPlugin("HighContrast");
+(function (pluginName = "HighContrast") {
+  const hc = new HWPlugin(pluginName);
 
   const string = hc.strings({
     de: {
@@ -17,9 +17,20 @@
       title: "HC Plugin",
       content: [
         {
-          key: "enableHighContrastCard",
-          type: "switch",
-          text: string.enableHCstring,
+          key: "theme",
+          type: "select",
+          text: "Theme",
+          selectDefaultValue: "none",
+          selectValue: [
+            {
+              text: "High contrast",
+              value: "hc",
+            },
+            {
+              text: "Color change",
+              value: "ch",
+            },
+          ],
         },
         {
           key: "displayDownloadButtoninFAB",
