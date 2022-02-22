@@ -1,7 +1,5 @@
-(function (pluginName = "HighContrast") {
-  const hc = new HWPlugin(pluginName);
-
-  hc.loadCSS({
+initFile((plugin) => {
+  plugin.loadCSS({
     "@global": {
       ".toolbar--material, .tabbar--material, :checked + .switch--material__toggle > .switch--material__handle, :checked + .switch--material__toggle, .btn-lila":
         {
@@ -25,4 +23,4 @@
       },
     },
   });
-})();
+});

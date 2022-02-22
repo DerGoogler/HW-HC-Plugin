@@ -1,9 +1,7 @@
-(function (pluginName = "HighContrast") {
-  const hc = new HWPlugin(pluginName);
-
+initFile((plugin) => {
   const darkmode = native.getPref("enableDarkmode") === "true";
 
-  hc.loadCSS({
+  plugin.loadCSS({
     "@global": {
       ".card": {
         border: !darkmode
@@ -61,4 +59,4 @@
       },
     },
   });
-})();
+});

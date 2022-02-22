@@ -1,10 +1,8 @@
-(function (pluginName = "HighContrast") {
+initFile((plugin) => {
   if (native.version.require(141)) {
-    const hc = new HWPlugin(pluginName);
+    plugin.require("settings.js");
 
-    require("settings.js");
-
-    switch (hc.getPluginPref("theme")) {
+    switch (plugin.getPluginPref("theme")) {
       case "hc":
         require("themes/hc.js");
         break;
@@ -15,15 +13,17 @@
       default:
         break;
     }
+console.log(__dirname)
+    console.log("fdgdfgfg");
 
-    if (hc.getPluginPref("displayDownloadButtoninFAB") === "true") {
+    if (plugin.getPluginPref("displayDownloadButtoninFAB") === "true") {
       document.getElementById("download-app").style.display = "block";
     }
 
     document.getElementById("download-app").addEventListener("click", () => {
-      console.log(`Author of this project is ${hc.getAuthor}`);
+      console.log(`Author of this project is ${plugin.getAuthor}`);
     });
   } else {
     console.log("You need the 1.4.1 version to make the plugin running");
   }
-})();
+});
