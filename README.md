@@ -14,3 +14,4 @@ After this edit the `plugins.yaml`
 ```
 
 Now you're finished the setup
+ 
