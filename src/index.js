@@ -9,6 +9,9 @@ initFile(
       case "ch":
         require("./themes/ch");
         break;
+      case "blue":
+        require("./themes/blue");
+        break;
 
       default:
         break;

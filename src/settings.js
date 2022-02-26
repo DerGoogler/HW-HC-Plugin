@@ -8,6 +8,10 @@ export default initFile((plugin) => {
           type: "select",
           text: "Theme",
           selectDefaultValue: "none",
+          callback: (keepDefaultFunction) => {
+            keepDefaultFunction;
+            native.alert("Please reload the app");
+          },
           selectValue: [
             {
               text: "High contrast",
@@ -16,6 +20,10 @@ export default initFile((plugin) => {
             {
               text: "Color change",
               value: "ch",
+            },
+            {
+              text: "Blue",
+              value: "blue",
             },
           ],
         },
