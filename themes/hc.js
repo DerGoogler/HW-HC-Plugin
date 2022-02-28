@@ -1,4 +1,4 @@
-export default initFile((plugin) => {
+initFile((plugin) => {
   const darkmode = native.getPref("enableDarkmode") === "true";
 
   plugin.loadCSS({

@@ -1,5 +1,4 @@
-run: dist/bundle.js
-mode: "null"
+run: index.js
 package:
   author: Der_Googler
   version: 1.0

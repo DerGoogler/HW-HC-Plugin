@@ -1,4 +1,4 @@
-export default initFile((plugin) => {
+initFile((plugin) => {
   plugin.addSettings([
     {
       title: "Settings",
@@ -26,6 +26,11 @@ export default initFile((plugin) => {
               value: "blue",
             },
           ],
+        },
+        {
+          key: "editable",
+          type: "switch",
+          text: "Make content editable",
         },
       ],
     },
